@@ -1,13 +1,8 @@
 require 'facets/module/mattr'
 require 'rack-heartbeat'
 
-app = Proc.new do |env|
-  [
-	'200',
-	{'Content-Type' => 'text/html'},
-	['A barebones rack app']
-  ]
-end
+require_relative 'app/racktest'
 
 use Rack::Heartbeat
-run app
+
+run App::RackTest.new
