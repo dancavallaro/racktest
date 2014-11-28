@@ -1,12 +1,17 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    facets (2.9.3)
     puma (2.10.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-heartbeat (1.0)
+      rack
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  facets
   puma
+  rack-heartbeat

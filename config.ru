@@ -1,3 +1,6 @@
+require 'facets/module/mattr'
+require 'rack-heartbeat'
+
 app = Proc.new do |env|
   [
 	'200',
@@ -6,4 +9,5 @@ app = Proc.new do |env|
   ]
 end
 
+use Rack::Heartbeat
 run app
