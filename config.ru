@@ -1,7 +1,9 @@
+$LOAD_PATH << File.expand_path(File.join(File.dirname(__FILE__), 'app'))
+
 require 'facets/module/mattr'
 require 'rack-heartbeat'
 
-require_relative 'app/racktest'
+require 'rack_test'
 
 use Rack::Heartbeat
 
