@@ -7,8 +7,14 @@ require 'rack/request_id'
 
 require 'rack_test'
 
-use Rack::RequestID
-use Rack::EnvInspector
-use Rack::Heartbeat
+app = Rack::Builder.new do
+  # Install middleware
+  use Rack::RequestID
+  use Rack::EnvInspector
+  use Rack::Heartbeat
+  
+  # Run application
+  run App::RackTest.new
+end
 
-run App::RackTest.new
+run app
