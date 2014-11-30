@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/dancavallaro/rack-envinspector.git
+  revision: 30c9524e73eccbb5c36483a6fdb452f9c4aaa34f
+  specs:
+    rack-envinspector (0.1)
+
+GIT
   remote: git://github.com/dancavallaro/rack-requestid.git
   revision: f653a58c963c42e228f0ec9945e2c0b295f4ded5
   specs:
@@ -20,5 +26,6 @@ PLATFORMS
 DEPENDENCIES
   facets
   puma
+  rack-envinspector!
   rack-heartbeat
   rack-requestid!

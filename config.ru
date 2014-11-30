@@ -4,13 +4,13 @@ end
 
 require 'facets/module/mattr'
 require 'rack-heartbeat'
-require 'rack/inspect_env'
+require 'rack/env_inspector'
 require 'rack/request_id'
 
 require 'rack_test'
 
 use Rack::RequestID
-use Rack::InspectEnv
+use Rack::EnvInspector
 use Rack::Heartbeat
 
 run App::RackTest.new
