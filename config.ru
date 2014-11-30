@@ -1,6 +1,4 @@
-%w{ app lib }.each do |dir|
-	$LOAD_PATH << File.expand_path(File.join(File.dirname(__FILE__), dir))
-end
+$LOAD_PATH << File.expand_path(File.join(File.dirname(__FILE__), 'app'))
 
 require 'facets/module/mattr'
 require 'rack-heartbeat'
