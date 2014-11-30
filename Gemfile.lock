@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/dancavallaro/rack-requestid.git
+  revision: f653a58c963c42e228f0ec9945e2c0b295f4ded5
+  specs:
+    rack-requestid (0.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -15,3 +21,4 @@ DEPENDENCIES
   facets
   puma
   rack-heartbeat
+  rack-requestid!
