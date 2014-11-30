@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/dancavallaro/rack-envinspector.git
-  revision: 30c9524e73eccbb5c36483a6fdb452f9c4aaa34f
+  revision: 409addc78fbc9dc56297364eaef6980500264d2e
   specs:
     rack-envinspector (0.1)
 
