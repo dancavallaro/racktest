@@ -1,15 +1,3 @@
-GIT
-  remote: git://github.com/dancavallaro/rack-envinspector.git
-  revision: 409addc78fbc9dc56297364eaef6980500264d2e
-  specs:
-    rack-envinspector (0.1)
-
-GIT
-  remote: git://github.com/dancavallaro/rack-requestid.git
-  revision: f653a58c963c42e228f0ec9945e2c0b295f4ded5
-  specs:
-    rack-requestid (0.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -17,8 +5,10 @@ GEM
     puma (2.10.2)
       rack (>= 1.1, < 2.0)
     rack (1.5.2)
+    rack-envinspector (0.1)
     rack-heartbeat (1.0)
       rack
+    rack-requestid (0.1)
 
 PLATFORMS
   ruby
@@ -26,6 +16,6 @@ PLATFORMS
 DEPENDENCIES
   facets
   puma
-  rack-envinspector!
+  rack-envinspector
   rack-heartbeat
-  rack-requestid!
+  rack-requestid
